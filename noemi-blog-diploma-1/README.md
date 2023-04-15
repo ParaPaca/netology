@@ -1,1 +1,1 @@
-This project is for ONLY 1660px screen width and wider
+This project is for ONLY 1660px and wider screen width
