@@ -17,7 +17,6 @@
 
 .body {
   height: 100vh;
-  max-width: 1660px;
   margin: 0 auto;
 }
 .header {
@@ -43,11 +42,14 @@
 }
 
 .navigation-bar {
+  max-width: 1660px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 245px;
+  margin: 0 auto;
   padding-top: 30px;
+  padding-left: 245px;
+  padding-right: 245px;
   position: relative;
 }
 .logo {
@@ -89,7 +91,10 @@ a {
 }
 
 .main {
-  margin: 63px 245px 60px;
+  max-width: 1660px;
+  margin: 63px auto 60px;
+  padding-left: 245px;
+  padding-right: 245px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -184,6 +189,7 @@ a {
   font-size: 14px;
   padding-bottom: 38px;
   position: relative;
+  font-weight: bold;
 }
 .divider {
   width: 66px;
@@ -219,6 +225,7 @@ a {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 .new-post-text-container .date {
   padding-bottom: 5px;
@@ -338,9 +345,11 @@ a {
   font-size: 12px;
 }
 .footer {
-  max-width: 1170px;
+  max-width: 1660px;
   width: 100%;
   margin: 0 auto 40px;
+  padding-left: 245px;
+  padding-right: 245px;
 }
 .social-media-container {
   background-color: #f3f7f5;
