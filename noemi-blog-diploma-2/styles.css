@@ -1,12 +1,337 @@
 @font-face {
   font-family: OpenSans; /*название шрифта*/
-  src: url(/диплом-1/fonts/OpenSans-Bold.woff); /*ссылка на шрифт*/
-	font-weight: bold; /*обозначаем жирный шрифт*/
+  src: url(/диплом-1/fonts/OpenSans-Regular.woff), url(/диплом-1/fonts/OpenSans-Bold.woff); /*ссылка на шрифт*/
+	font-weight: 400, 700; /*обозначаем шрифт*/
 }
-@font-face {
-  font-family: OpenSans; /*название шрифта*/
-  src: url(/диплом-1/fonts/OpenSans-Regular.woff); /*ссылка на шрифт*/
-	font-weight: regular; /*обозначаем шрифт*/
+@media screen and (min-width: 641px) {
+  .main {
+    margin: 62px auto;
+  }
+  .shop {
+    margin-bottom: 4rem;
+  }
+  .social-media-container {
+    margin-bottom: 72px;
+  }
+  .footer {
+    margin: 0 auto 40px;
+  }
+  .copyright {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header {
+    background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/banner-bg.jpg");
+  }
+  .main-posts-section {
+    column-gap: 120px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    height: 40px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  h1 {
+    font-size: 2.8125rem;
+    line-height: 75px;
+    margin-bottom: 145px;
+  }
+  .trend-block-board {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4px;
+  }
+  .post-title {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+  .trend-block {
+    height: 20rem;
+  }
+  .small-title.header-2 {
+    font-size: 1.25rem;
+  }
+  .main-posts-section {
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
+  .post-card {
+    flex-direction: row;
+    column-gap: 31px;
+    width: 100%;
+  }
+  .post-preview {
+    width: 381px;
+  }
+  .post-text-container {
+    width: 367px;
+  }
+  .date-author-container {
+    margin-bottom: 42px;
+  }
+  .aside {
+    max-width: 271px;
+  }
+  .shop-block-board {
+    justify-content: center;
+    column-gap: 7rem;
+    flex-direction: row;
+  }
+  .shop-block-title.header-2 {
+    font-size: 20px;
+  }
+  .shop-block-text-container::before {
+    height: 262px;
+    width: 345px;
+    left: -25px; 
+  }
+  .footer {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  .header {
+    background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/banner-bg-tablet.jpg");
+  }
+  .navigation-bar {
+    padding-left: 35px;
+    padding-right: 35px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    height: 36px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 55px;
+    margin-bottom: 124px;
+  }
+  .trend-block-board {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4px;
+  }
+  .trend-block {
+    height: 249px;
+  }
+  .post-title {
+    font-size: 1.0625rem;
+    line-height: 22px;
+  }
+  .small-title.header-2 {
+    font-size: 18px;
+  }
+  /* .trend-block {
+    width: calc(50% - 2px);
+  } */
+  .main-posts-section {
+    padding-left: 35px;
+    padding-right: 35px;
+    column-gap: 34px;
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
+  .posts-board {
+    min-width: 393px;
+  }
+  .post-card {
+    flex-direction: column;
+    row-gap: 14px;
+    position: relative;
+    max-width: 393px;
+  }
+  .post-preview, .post-text-container {
+    width: 100%;
+  }
+  .post-card:not(:last-child)::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    background-color: #eee;
+    position: absolute;
+    margin-left: -50%;
+  }
+  .date-author-container {
+    margin-bottom: 30px;
+  }
+  .aside {
+    max-width: 273px;
+  }
+  .shop-block-board {
+    margin-left: 35px;
+    margin-right: 35px;
+    justify-content: space-between;
+    column-gap: 68px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .shop-block-text-container::before {
+    height: 262px;
+    width: 345px;
+    left: -25px; 
+  }
+  .footer {
+    max-width: 768px;
+    min-width: 641px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 737px) {
+  .shop-block-board {
+    justify-content: center;
+  }
+  .shop-block-text-container::before {
+    height: calc(100% + 80px);
+    left: -25px; 
+  }
+}
+@media screen and (max-width: 640px) {
+  .header {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/banner-mobile.jpg);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .navigation-bar {
+    flex-direction: column-reverse;
+    row-gap: 174px;
+    align-items: flex-end;
+  }
+  .logo {
+    align-self: center;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 220px;
+  }
+  .trend-block {
+    height: 233px;
+  }
+  .trend-block-board {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  .post-title {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .main {
+    margin: 42px auto;
+  }
+  .main-posts-section {
+    padding-bottom: 4rem;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .posts-board {
+    padding-bottom: 60px;
+    align-items: center;
+  }
+  .post-card {
+    flex-direction: column;
+    row-gap: 14px;
+    position: relative;
+    max-width: 393px;
+  }
+  .post-preview, .post-text-container {
+    width: 100%;
+  }
+  .post-card::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    background-color: #eee;
+    position: absolute;
+    margin-left: -50%;
+  }
+  .date-author-container {
+    margin-bottom: 30px;
+  }
+  .tag-list {
+    justify-content: center;
+  }
+  .main {
+    margin-bottom: 42px;
+  }
+  .shop-block-board {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 54px;
+  }
+  h2.small-title {
+    font-size: 1rem;
+  }
+  .shop-block-text-container::before {
+    width: 325px;
+    left: -15px; 
+  }
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto 46px;
+  }
+  .social-media-container {
+    margin-bottom: 48px;
+  }
+  .copyright {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 641px) and (max-width: 1200px), (min-width: 1201px)  {
+  .trend-block-board {
+    flex-wrap: nowrap;
+  }
+  .trend-block {
+    width: 25%;
+  }
+}
+@media screen and (orientation: portrait) and (min-width: 641px) and (max-width: 1200px)  {
+  .trend-block-board {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+  .trend-block {
+    width: calc(50% - 2px);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 640px)  {
+  .trend-block-board {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+  .trend-block {
+    width: 50%;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 640px) {
+  .trend-block {
+    width: 100%;
+  }
 }
 * {
   padding: 0;
@@ -19,12 +344,10 @@
   width: 100%;
 }
 .header {
-  width: 100% ;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  height: 450px;
+  background-position: bottom;
   color: #fff;
   position: relative;
   z-index: 0;
@@ -45,22 +368,22 @@
 }
 
 .navigation-bar {
-  max-width: 1660px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  column-gap: 526px;
+  justify-content: space-between;
+  /* column-gap: 526px; */
   margin-top: 30px;
-  /* padding-left: 245px;
-  padding-right: 245px; */
   position: relative;
 }
-.logo {
-  width: 179px;
-  height: 40px;
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.logo img {
+  cursor: pointer;
 }
 .nav-list {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   list-style: none;
   align-items: center;
@@ -80,13 +403,17 @@ a {
 .nav-list li a:hover {
   text-decoration: underline;
 }
+.hamburger-menu-container {
+  width: 23px;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
 .hero-title {
-  width: 680px;
+  max-width: 680px;
   position: relative;
   z-index: 1;
-  margin-top: 100px;
-  font-size: 2.8125rem;
-  line-height: 75px;
+  margin-top: 102px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -95,13 +422,12 @@ a {
 .main {
   max-width: 1660px;
   width: 100%;
-  margin: 63px auto 60px;
+  margin: 62px auto;
   /* padding-left: 245px;
   padding-right: 245px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 
@@ -113,23 +439,20 @@ a {
 }
 .trend-block-board{
   display: flex;
-  flex-direction: row;
-  height: 20rem;
-  column-gap: 4px;
 }
 .header-2 {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   text-transform: uppercase;
 }
 .trend-block {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  width: 25%;
+  background-position: center;
   position: relative;
   z-index: 0;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 .trend-block.block-1 {
   background-image: url(/noemi-blog-diploma-2/images/trend1.jpg);
@@ -155,6 +478,7 @@ a {
   z-index: -1;
 }
 .trend-block-content-container{
+  width: 100%;
   margin: 0rem 1rem 1rem;
   padding: 2.3rem 2.3rem 2rem;
   border: #b59f5b 3px solid;
@@ -169,12 +493,10 @@ a {
 
 .main-posts-section {
   max-width: 1660px;
-  padding-left: 245px;
-  padding-right: 245px;
-  padding-bottom: 4rem;
+  /* padding-left: 245px;
+  padding-right: 245px; */
   display: flex;
-  flex-direction: row;
-  column-gap: 120px;
+  /* column-gap: 120px; */
   justify-content: center;
 }
 .posts-board {
@@ -182,23 +504,23 @@ a {
   flex-direction: column;
   gap: 60px;
 }
+
 .post-card {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
 .post-preview {
-  width: 381px;
+  /* width: 381px; */
   background: #b59f5b;
   text-align: center;
   font-size: 1.25rem;
 }
-.post-text-container {
+/* .post-text-container {
   width: 367px;
   margin-left: 31px;
-}
+} */
 .tags-container {
   display: flex;
   flex-direction: row;
@@ -218,8 +540,6 @@ a {
 }
 .post-title {
   text-transform: uppercase;
-  font-size: 1.25rem;
-  line-height: 24px;
   padding-bottom: 30px;
 }
 .post-title:hover {
@@ -229,7 +549,7 @@ a {
   display: flex;
   flex-direction: row;
   column-gap: 0.875rem;
-  margin-bottom: 42px;
+  /* margin-bottom: 42px; */
 }
 .date {
   color: #888;
@@ -351,7 +671,7 @@ a {
   background-color: #b59f5b;
   border: none;
 } */
-.button {
+.button, a button.button {
   background-color: #b59f5b;
   border: none;
   font-size: 0.875rem;
@@ -366,6 +686,7 @@ a {
 }
 .button:hover {
   background-color: #313131;
+  cursor: pointer;
 }
 .button:focus, 
 .button:focus-visible {
@@ -388,7 +709,6 @@ a {
   row-gap: 6px;
   flex-wrap: wrap;
   list-style: none;
-  font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -396,6 +716,9 @@ a {
 .tag-list li{
   padding: 4px 10px;
   border:#ededed 3px solid;
+}
+.tag-list li a {
+  font-size: 0.75rem;
 }
 .tag-list li:hover {
   border: #b59f5b solid 3px;
@@ -417,6 +740,9 @@ a {
 .category-list li:not(:first-child) {
   padding-top: 0.875rem;
 }
+.categories-container li a {
+  font-size: 0.875rem;
+}
 .category-list li a:hover {
   color: #b59f5b;
 }
@@ -429,14 +755,10 @@ a {
 .shop {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-bottom: 4rem;
+  justify-content: center;
 }
 .shop-block-board {
   display: flex;
-  flex-direction: row;
-  column-gap: 7rem;
-  justify-content: center;
 }
 .shop-block-content-container {
   display: flex;
@@ -452,11 +774,8 @@ a {
   content: "";
   position: absolute;
   border: #b59f5b 3px solid;
-  top: -56px;
-  width: 345px;
-  height: 265px;
+  top: -60px;
   /* padding: 53px 19px 69px;*/
-  left: -23px; 
   background: none;
   z-index: -1;
 }
@@ -497,18 +816,15 @@ a {
   font-weight: bold;
   font-size: 1.25rem;
 }
-.shop-block-footer > .button {
+.shop-block-footer > a > .button {
   width: 140px;
 }
 .footer {
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto 40px;
   display: flex;
   flex-direction: column;
 }
 .social-media-container {
-  
   background-color: #f3f7f5;
   height: 83px;
   display: flex;
@@ -516,11 +832,9 @@ a {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  margin-bottom: 72px;
 }
 .copyright {
   text-align: center;
   color: #999;
   font-weight: bold;
-  padding-bottom: 40px;
 }
