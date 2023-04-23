@@ -347,7 +347,7 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   color: #fff;
   position: relative;
   z-index: 0;
@@ -455,16 +455,16 @@ a {
   justify-content: center;
 }
 .trend-block.block-1 {
-  background-image: url(/noemi-blog-diploma-2/images/trend1.jpg);
+  background-image: url(https://raw.githubusercontent.com/ParaPaca/netology/main/noemi-blog-diploma-2/images/trend1.jpg);
 }
 .trend-block.block-2 {
-  background-image: url(/noemi-blog-diploma-2/images/trend2.jpg);
+  background-image: url(https://raw.githubusercontent.com/ParaPaca/netology/main/noemi-blog-diploma-2/images/trend2.jpg);
 }
 .trend-block.block-3 {
-  background-image: url(/noemi-blog-diploma-2/images/trend3.jpg);
+  background-image: url(https://raw.githubusercontent.com/ParaPaca/netology/main/noemi-blog-diploma-2/images/trend3.jpg);
 }
 .trend-block.block-4 {
-  background-image: url(/noemi-blog-diploma-2/images/trend4.jpg);
+  background-image: url(https://raw.githubusercontent.com/ParaPaca/netology/main/noemi-blog-diploma-2/images/trend4.jpg);
 }
 .trend-block::after {
   content: "";
