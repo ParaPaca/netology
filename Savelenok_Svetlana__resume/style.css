@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*тело резюме*/
+body {
+  background-color: #b8b8d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/*тело резюме*/
+
+/*резюме*/
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  min-height: calc(100vh - 100px);
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(91,95,151,.3);
+}
+/*резюме*/
+
+/*резюме левая сторона*/
+.main .left-side {
+  background-color: #5b5f97;
+  padding: 40px;
+}
+/* профиль */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.photo-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.photo-container img {
+  width: 100%;
+}
+.name-job-container {
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.name-job-container p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.contact-info, .education-info, .languages-info {
+  padding-top: 40px;
+  color: #fff;
+}
+.left-side article h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+/* профиль */
+
+/* контактная информация */
+.contact-info > ul > li, .education-info {
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+}
+.contact-info > ul > li {
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+svg {
+  width: 20px;
+  height: 20px;
+}
+.icon.right-side-icon {
+  fill: #ff6b6c;
+}
+.tel, .email, .website {
+  text-decoration: none;
+  color: #fff;
+}
+/* контактная информация */
+
+/* высшее образование */
+.education-info {
+  display: block;
+  font-size: 1rem;
+}
+.alma-mater, .languages-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4rem;
+}
+.education-info h5 {
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #fff;
+}
+.education-info h3 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-bottom: 7px;
+}
+.education-info h4 {
+  font-size: .9rem;
+  font-weight: normal;
+}
+/* высшее образование */
+
+/* языки */
+.languages-container {
+  list-style: none;
+}
+.languages-container li:not(:last-child) {
+  padding-bottom: 15px;
+}
+.languages-container li h3 {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+}
+.languages-container li .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #b8b8d1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.languages-container li .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ff6b6c;
+  border-radius: 5px;
+}
+/* языки */
+/*резюме левая сторона*/
+
+/*резюме правая сторона*/
+.main .right-side {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.right-side article h2 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1px;
+}
+.about-me-text p:not(:last-child) {
+  padding-bottom: 0.7rem;
+}
+/* опыт работы */
+.job {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+.job-position h3 {
+  margin-bottom: .3rem;
+}
+.job-position ul {
+  list-style: disc;
+  margin-left: 1.3rem;
+}
+.job-position ul li::marker {
+  color: #ff6b6c;
+}
+.job-position ul li:not(:last-child) {
+  margin-bottom: .3rem;
+}
+/* опыт работы */
+
+/* навыки */
+.skills-container li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.skills-container li:not(:last-child) {
+  margin-bottom: 1.1rem;
+}
+.skills-container li h3 {
+  display: block;
+  min-width: 10rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #000;
+}
+.skills-container li .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #b8b8d1;
+  border-radius: 5px;
+}
+.skills-container li .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffc145;
+  border-radius: 5px;
+}
+/* навыки */
+
+/* интересы */
+.interests-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.interests-container li {
+  display: flex;
+  flex-direction: row;
+}
+.interests-container li .icon svg {
+  fill: #ffc145;
+}
+/* интересы */
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 10px 0;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .interests-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .job {
+    flex-direction: column;
+  }
+  .years-company-container {
+    margin-bottom: 5px;
+  }
+  .interests-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .skills-container li {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: .5rem;
+  }
+}
