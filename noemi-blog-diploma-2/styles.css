@@ -1012,6 +1012,9 @@ h1 {
   .post-preview, .post-text-container {
     width: 100%;
   }
+  .post-text {
+    max-width: none;
+  }
   .post-card::after {
     content: "";
     width: 100%;
@@ -1025,13 +1028,11 @@ h1 {
   .date-author-container {
     margin-bottom: 30px;
   }
-  .tag-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .main {
     margin-bottom: 72px;
+  }
+  .aside {
+    max-width: none;
   }
   .shop-block-board {
     -webkit-box-orient: vertical;
