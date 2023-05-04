@@ -1,18 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
 /*тело резюме*/
 body {
   background-color: #b8b8d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
 }
 /*тело резюме*/
@@ -24,9 +38,12 @@ body {
   max-width: 1024px;
   min-height: calc(100vh - 100px);
   margin: 50px 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(91,95,151,.3);
+  -webkit-box-shadow: 0 35px 55px rgba(91,95,151,.3);
+          box-shadow: 0 35px 55px rgba(91,95,151,.3);
 }
 /*резюме*/
 
@@ -37,10 +54,19 @@ body {
 }
 /* профиль */
 .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
@@ -84,14 +110,23 @@ body {
 /* контактная информация */
 .contact-info > ul > li, .education-info {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
 }
 .contact-info > ul > li {
   cursor: pointer;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .icon {
   width: 20px;
@@ -117,8 +152,13 @@ svg {
   font-size: 1rem;
 }
 .alma-mater, .languages-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 1.4rem;
 }
 .education-info h5 {
@@ -174,8 +214,13 @@ svg {
   padding: 40px;
 }
 .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 3rem;
 }
 .right-side article h2 {
@@ -190,11 +235,22 @@ svg {
 }
 /* опыт работы */
 .job {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  column-gap: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
 }
 .job-position h3 {
   margin-bottom: .3rem;
@@ -213,10 +269,19 @@ svg {
 
 /* навыки */
 .skills-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 .skills-container li:not(:last-child) {
@@ -248,14 +313,27 @@ svg {
 
 /* интересы */
 .interests-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .interests-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .interests-container li .icon svg {
   fill: #ffc145;
@@ -269,6 +347,7 @@ svg {
     grid-template-columns: repeat(1,1fr);
   }
   .interests-container {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     row-gap: 1rem;
@@ -276,16 +355,21 @@ svg {
 }
 @media screen and (max-width: 500px) {
   .job {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .years-company-container {
     margin-bottom: 5px;
   }
   .interests-container {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
   .skills-container li {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     row-gap: .5rem;
